@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#63FB77">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menjumlahkan 2 Buah Bilangan"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Bilangan Pertama"
+        android:textSize="15sp"
+        android:layout_marginTop="80dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/bilangan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bilangan Pertama"
+        android:layout_alignParentLeft="true"
+        android:inputType="number"
+        android:layout_marginTop="110dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Bilangan Kedua"
+        android:textSize="15sp"
+        android:layout_marginTop="160dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/bilangan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="Bilangan Kedua"
+        android:layout_marginTop="190dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Bilangan"
+        android:layout_marginTop="245dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/txtHasil"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSubmit"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:gravity="center_horizontal"
+        android:text="Hasil Penjumlahan"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/hasilPenjumlahan"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHasil"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+</RelativeLayout>
